@@ -214,6 +214,7 @@ header .img-wrapper img{
     height: 25rem;
     position: relative;
     cursor: pointer;
+    margin: 10px;
 }
 
 .card-img-wrapper{
@@ -272,4 +273,49 @@ header .img-wrapper img{
 
 .card:hover .card-img-wrapper img{
     opacity: .5;
+}
+
+.contato{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 120px 0;
+}
+
+.contato-text{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.contato-text h3{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 100;
+    color: #4b4b4b;
+}
+
+.contato-text h1{
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    color: #4b4b4b;
+}
+
+.contato-text i{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    font-size: 3rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+.contato-text:hover i{
+    visibility: visible;
+    opacity: 1;
+    left: 90%;
 }

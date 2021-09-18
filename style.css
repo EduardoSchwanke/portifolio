@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 
+body, html{
+    overscroll-behavior: ;
+}
 
 :root{
     --font-primary: "baloo 2", sans-serif;
@@ -34,7 +37,7 @@
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
     font-family: "Mulish:ital", sans-serif;
-    transition: color .5s;
+    transition: all .5s;
 }
 
 .menu-desktop nav ul li a:hover{
@@ -311,11 +314,51 @@ header .img-wrapper img{
     font-size: 3rem;
     visibility: hidden;
     opacity: 0;
-    transition: 1.5s;
+    transition: 2s;
 }
 
 .contato-text:hover i{
     visibility: visible;
     opacity: 1;
     left: 90%;
+}
+
+
+footer{
+    width: 100%;
+    background-color: rgb(121, 43, 124);
+    height: 4rem;
+}
+
+footer .footer-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-size: 1.1rem;
+    font-family: var(--font-primary);
+    color: white;
+    user-select: none;
+}
+
+#link-top{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-decoration: none;
+}
+
+#link-top i{
+    font-size: 2.6rem;
+    text-shadow: .1rem .1rem .1rem rgb(255, 255, 255);
 }

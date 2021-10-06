@@ -385,7 +385,6 @@ button{
 
 .orcamento-wrapper{
     width: 60%;
-    height: 60%;
     background-color: #ffffffd5;
     border-radius: 10px;
     box-shadow: 0 .1rem .3rem rgb(22, 22, 22);
@@ -396,10 +395,13 @@ button{
     position: absolute;
     top: -3.5rem;
     left: 2rem;
-    color: #272727;
     font-size: 2.5rem;
     font-family: var(--font-primary);
     font-weight: lighter;
+    background-color: #6a3093;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .orcamento form{
@@ -588,7 +590,7 @@ footer p{
 }
 
 .hamburguer-animate{
-    right: 17rem;
+    right: 16rem;
 }
 
 
@@ -598,7 +600,7 @@ footer p{
     height: 100vh;
     background-color: #fff;
     top: 0;
-    right: -25rem;
+    right: -100%;
     z-index: 98;
     transition: all 1s;
 }
@@ -618,7 +620,7 @@ footer p{
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 30%;
+    height: 50%;
 }
 
 .menu-mobile li a{
@@ -690,6 +692,31 @@ a{
     .conhecimento-img-wrapper{
         display: none;
     }
+
+    .contato-left{
+        width: 35%;
+        background-image: linear-gradient(rgba(15, 15, 15, 0.356),rgb(22, 22, 22)), url('images/bg-contato.jpg');
+        background-size: cover;
+        display: none;
+    }
+    
+    .contato-right{
+        width: 100%;
+        background-color: #eee;
+        padding: 1rem 2rem 2rem 2rem;
+    }
+
+    .input-group{
+        width: 100%;
+    }
+
+    .field{
+        width: 100%;
+    }
+
+    .contato-wrapper{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -745,6 +772,27 @@ a{
         opacity: 1;
         font-size: 2rem;
     }
+
+    .orcamento h1{
+        position: absolute;
+        top: -2rem;
+        left: 2rem;
+        font-size: 1.5rem;
+        font-family: var(--font-primary);
+        font-weight: lighter;
+        background-color: #6a3093;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    .orcamento-wrapper{
+        width: 80%;
+    }
+
+    .orcamento form{
+        margin: 2rem;
+    }
 }
 
 @media screen and (max-width: 425px){
@@ -762,5 +810,22 @@ a{
     }
     .menu-mobile{
         width: 100%;
+    }
+
+    .card-img-wrapper{
+        width: auto;
+    }
+
+    .contato-wrapper{
+        width: 94%;
+    }
+
+    .orcamento-wrapper{
+        width: 96%;
+    }
+
+    #link-top{
+        right: 1rem;
+        bottom: 2rem;
     }
 }

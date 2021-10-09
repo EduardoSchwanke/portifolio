@@ -350,7 +350,7 @@ section.formulario{
     transition: all .3s;
 }
 
-.field:focus + label{
+.foco{
     top: 0;
     font-size: .8rem;
 }
